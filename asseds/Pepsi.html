@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+
+    <link rel="stylesheet" href="../asseds/Css/styles.css" />
+
+    <title>PEPSI MUTI COR</title>
+
+</head>
+       <body>
+
+
+<section class="sexo">
+
+     <header>
+                 <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Hoome</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+    </header>
+
+             <div class="content">
+                  <div class="textBox">
+                       <h2>That's What<br><span>I Like</span></h2>
+                       <p>Pepsi e Design de Comunicação - onde é analisada a evolução das
+                        campanhas comunicativas da marca, dando especial foco ao cartaz</p>
+
+                        <a href="#">View All Products</a>
+                  </div>
+                        <div class="imgBox">
+                            <img src="../asseds/./img/pepsi001.png" class="pepsi" />
+                  </div>
+             </div>
+
+                   <ul class="loop">
+                         <li><img src="./img/pepsi001.png" onclick="imgTega('./img/pepsi001.png');PozeColor('#0062be')"></li>
+                         <li><img src="./img/pepsi002.png" onclick="imgTega('./img/pepsi002.png');PozeColor('#e60c2c')"></li>
+                         <li><img src="./img/pepsi003.png" onclick="imgTega('./img/pepsi003.png');PozeColor('#1e1e1e')"></li>
+                   </ul> 
+
+                   <ul class="sci">
+                        <li><a href="#"><img src="../asseds/img/facebook.png"></a></li>
+                        <li><a href="#"><img src="../asseds/img/instagram.png"></a></li>
+                   </ul>
+</section>
+
+
+               <script type="text/javascript">
+                      function imgTega(teguinha) {
+                          document.querySelector('.pepsi').src = teguinha;
+                      }
+                        function PozeColor(color) {
+                            const sexo = document.querySelector('.sexo');
+                            sexo.style.background = color;
+                        }
+
+               </script>
+    
+       </body>
+</html>
